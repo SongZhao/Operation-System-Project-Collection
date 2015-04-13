@@ -1,0 +1,6 @@
+CS 537 P1
+Author: Song Zhao
+
+For Birthday Paradox I made a mistake that I used while(!feof(ifp)) twice which make the second while(!feof(ifp)) loop never excutes. I stucked at there for a while, the rest part is pretty smooth.
+
+For adding a syscall to xv6 I modify sysproc.c, syscall.h, syscall.c, user.h, usys.s and defs.h. Most of the changes are in the sysproc.c. In sysproc.c I added a new function addnum. I think the part that should notice is we have to declare an extern int if we want the number to be returned correct.
